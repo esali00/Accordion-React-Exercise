@@ -1,4 +1,8 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +14,58 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.accordion-container {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  padding-bottom: 25px;
+}
+
+.accordion-container h2 {
+  /* margin: 10px 0; */
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.question {
+  margin: 10px 0;
+  background-color: white;
+}
+
+.accordion-opener {
+  background-color: white;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-opener h3 {
+  margin-left: 25px
+}
+
+.accordion-opener button {
+  cursor: pointer;
+  background-color: lightblue;
+  border: 2px solid blue;
+  font-weight: bold;
+  color: blue;
+  height: 30px;
+  width: 30px;
+  margin-right: 25px;
+}
+
+.answer {
+  text-align: left;
+  margin-left: 25px
+}
+
+.answer p {
+  margin: 15px 0;
 }
